@@ -62,7 +62,7 @@ a {
 			transition: all .3s ease;
 }
 
-a:hover, 
+a:hover,
 a:focus {
 	color: inherit;
 }
@@ -74,7 +74,7 @@ h4,
 h5,
 h6 {
 	margin: 0;
-	padding: 0; 
+	padding: 0;
 	color: #fff;
 	font-weight: 600;
 }
@@ -98,11 +98,11 @@ h4 {
 p {
 	color: #fff;
 	font-weight: 600;
-	font-family: 'Quicksand', sans-serif;	
+	font-family: 'Quicksand', sans-serif;
 }
 
 i, em {
-	font-style: normal; 
+	font-style: normal;
 }
 
 img {
@@ -221,12 +221,12 @@ blockquote span img {
 .audio-on .music-bg .lines span:nth-child(1) {
     -webkit-animation: musicline 2s 0.5s ease-out alternate infinite;
     		animation: musicline 2s 0.5s ease-out alternate infinite;
-}  
+}
 
 .audio-on .music-bg .lines span:nth-child(2) {
     -webkit-animation: musicline 2s 1s ease-out alternate infinite;
     		animation: musicline 2s 1s ease-out alternate infinite;
-} 
+}
 
 .audio-on .music-bg .lines span:nth-child(3) {
     -webkit-animation: musicline 2s 1.5s ease-out alternate infinite;
@@ -944,7 +944,7 @@ blockquote span img {
 	background-color: transparent;
 	-webkit-transition: all .3s cubic-bezier(.55, 0, .1, 1);
 			transition: all .3s cubic-bezier(.55, 0, .1, 1);
-	z-index: 2; 
+	z-index: 2;
 }
 
 .show-all .page:before {
@@ -1163,7 +1163,7 @@ svg g [fill] {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
-    background-image: url(/img/bg.jpg);
+    background-image: url(/img/background.jpg);
 }
 
 .background:before,
@@ -1378,7 +1378,7 @@ svg g [fill] {
 }
 
 .slider-section .swiper-slide-active .content-box .inner {
-	opacity:1;	
+	opacity:1;
 	-webkit-transition: all .5s ease;
 			transition: all .5s ease;
 	-webkit-transform:translateX(0px);
@@ -2115,7 +2115,7 @@ svg g [fill] {
 	color: #fff;
 }
 
-.testimonials .swiper-container-horizontal > .swiper-pagination-bullets, 
+.testimonials .swiper-container-horizontal > .swiper-pagination-bullets,
 .testimonials .swiper-pagination-custom,
 .testimonials .swiper-pagination-fraction {
 	width: 100%;
@@ -2275,7 +2275,7 @@ svg g [fill] {
 	-webkit-transition: all .3s;
 			transition: all .3s;
 }
- 
+
 .portfolio .portfolio-filter ul li.active {
 	color: #0e0f10;
 	background-color: #fff;
@@ -2294,7 +2294,7 @@ svg g [fill] {
 .portfolio .portfolio-items .item figure img {
 	opacity: 1;
 	width: 100%;
-	height: 100%; 
+	height: 100%;
 	-webkit-transition: all .3s;
 			transition: all .3s;
 }
@@ -2328,7 +2328,7 @@ svg g [fill] {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-  
+
 .portfolio .portfolio-items .item figure figcaption p {
 	position: absolute;
 	left: 0;
@@ -2346,7 +2346,7 @@ svg g [fill] {
 	color: #fff;
 	margin-right: 5px;
 }
- 
+
 .portfolio .portfolio-items .item figure figcaption svg.icon {
 	position: absolute;
 	right: 0;
@@ -2359,21 +2359,21 @@ svg g [fill] {
 	-webkit-transition: all .3s;
 			transition: all .3s;
 }
- 
+
 .portfolio .portfolio-items .item figure:hover img {
 	opacity: 0.5;
 	-webkit-transform: scale(1.1);
-			transform: scale(1.1); 
+			transform: scale(1.1);
 }
- 
+
 .portfolio .portfolio-items .item figure:hover p {
-	opacity: 1; 
+	opacity: 1;
 	-webkit-transform: translateX(0%);
 			transform: translateX(0%);
 }
- 
+
 .portfolio .portfolio-items .item figure:hover svg.icon {
-	opacity: 1; 
+	opacity: 1;
 	-webkit-transform: translateX(0%);
 			transform: translateX(0%);
 }
@@ -2512,7 +2512,7 @@ svg g [fill] {
 
 .blog .blog-item.two .head {
 	background: transparent;
-	border-bottom: none;	
+	border-bottom: none;
 }
 
 .blog .blog-item:hover .head {
@@ -3426,7 +3426,7 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 	pointer-events: none;
 	-webkit-transform: translate(-50%, -50%);
 			transform: translate(-50%, -50%);
-	z-index: 4000; 
+	z-index: 4000;
 }
 
 .preloader span {
@@ -3640,7 +3640,7 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 	.content {
 		width: calc(100% - 70px);
 		height: calc(100% - 70px);
-		margin: 35px;	
+		margin: 35px;
 	}
 	.slider-section .content-box .inner {
 		padding: 0 70px;
@@ -3715,7 +3715,7 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 		padding: 15px;
 	}
 	.box h4 {
-		text-align: center;	
+		text-align: center;
 	}
 	.about .photo {
 		margin-bottom: 20px;
@@ -3815,7 +3815,7 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 		font-size: 14px;
 	}
 	.blog .blog-item.two .head {
-		display: none;	
+		display: none;
 	}
 	.blog .blog-item.two h4,
 	.blog .blog-item.two ul,
@@ -3946,7 +3946,7 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 	}
 }
 
-/* Background Line Animation */ 
+/* Background Line Animation */
 @-webkit-keyframes run {
 	0% {
 		top: -50%;
