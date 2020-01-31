@@ -3605,6 +3605,273 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 	.banner h1 {
     	font-size: 50px;
 	}
+<<<<<<< HEAD
+=======
+	.banner p {
+    	font-size: 20px;
+	}
+	.newsletter-block,
+	.page .newsletter,
+	.page .social,
+	.swiper-counter,
+	.scroll-down,
+	.slider-nav:before,
+	.slider-nav:after,
+	.page .logo,
+	.music-bg .sound {
+		display: none;
+	}
+	[data-tooltip]:after {
+		display: none;
+	}
+	.section-slider:before,
+	.about:after,
+	.blog:after,
+	.contact:after,
+	.portfolio:after,
+	.background:before {
+		border: 35px solid rgba(14, 15, 16, .7);
+	}
+	h2 {
+		font-size: 32px;
+	}
+	.preloader p,
+	.preloader span {
+		font-size: 30px;
+	}
+	.content {
+		width: calc(100% - 70px);
+		height: calc(100% - 70px);
+		margin: 35px;
+	}
+	.slider-section .content-box .inner {
+		padding: 0 70px;
+	}
+	.slider-section .content-box .inner h1 {
+	    font-size: 35px;
+	}
+	.slider-section .content-box .inner p {
+		font-size: 12px;
+	}
+	.slider-nav {
+		top: calc(50% - 15px);
+		bottom: 0;
+		-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+	}
+	.page-nav {
+    	font-size: 12px;
+	}
+	.nav-up {
+		top: 6px;
+	}
+	.nav-left {
+		left: 6px;
+	}
+	.nav-right {
+		right: 6px;
+	}
+	.nav-down {
+	    bottom: 5px;
+	}
+	.nav-left-top {
+    	top: 6px;
+    	left: 6px;
+	}
+	.nav-left-down {
+    	left: 6px;
+   		bottom: 5px;
+	}
+	.nav-right-top {
+    	top: 6px;
+    	right: 6px;
+	}
+	.nav-right-down {
+    	right: 6px;
+    	bottom: 5px;
+	}
+	.page-zoom {
+		top: 25%;
+	}
+	.animation-wrap {
+		top: 19px;
+	}
+	.music-bg {
+		width: 60px;
+	}
+	.bottom-panel {
+		max-width: 190px;
+	}
+	.slider-control-wrap .left-side {
+		margin: 0 15px;
+	}
+	.music-bg {
+		right: 35px;
+    	bottom: 35px;
+	}
+	.bottom-panel {
+	    left: 35px;
+    	bottom: 35px;
+	}
+	.box {
+		padding: 15px;
+	}
+	.box h4 {
+		text-align: center;
+	}
+	.about .photo {
+		margin-bottom: 20px;
+	}
+	.about .info-icon {
+		padding-top: 20px;
+	}
+	.about .btn {
+		position: relative;
+		display: block;
+		top: 0;
+		right: 0;
+		margin: 15px auto;
+	}
+	.mb-100 {
+		margin-bottom: 50px !important;
+	}
+	.video {
+		height: 200px;
+	}
+	.about .inter-icon {
+		padding: 10px;
+	}
+	.about .inter-icon:before {
+		height: 37px;
+	}
+	.about .inter-icon i {
+		left: 7px;
+		font-size: 16px;
+		margin-right: 35px;
+	}
+	.about .desc-inter h6 {
+		font-size: 14px;
+    	line-height: 14px;
+	}
+	.testimonials {
+    	min-height: 500px;
+    	height: auto;
+  	}
+	.testimonial-item {
+    	flex-direction: column;
+	}
+	.testimonial-img {
+		-webkit-transform: translate(0, -10px);
+    			transform: translate(0, -10px);
+    	width: 95%;
+	}
+	.testimonial-content {
+		left: 0;
+    	margin-top: 60px;
+    	text-align: center;
+    	padding: 0 0;
+	}
+	.testimonial-content span {
+		margin-bottom: 10px;
+	}
+	.testimonial-content .rating {
+		display: block;
+		float: none;
+	}
+	.testimonial-content p {
+		margin-bottom: 0;
+	}
+	.testimonial-pagination {
+		-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+		left: 50% !important;
+		top: 250px;
+		width: 100% !important;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.testimonial-pagination .swiper-pagination-bullet {
+		width: 11px;
+		height: 5px;
+	}
+	.testimonial-pagination.swiper-pagination-bullets .swiper-pagination-bullet {
+		margin: 0 3px;
+	}
+	.testimonial-pagination .swiper-pagination-bullet-active {
+		height: 5px;
+		width: 20px;
+	}
+	.about .experience .item {
+		text-align: center;
+	}
+	.about .experience .item .main svg {
+    	position: relative;
+		right: 0;
+    	margin-bottom: 10px;
+	}
+	.contact .contact-info .info i {
+		margin: 0;
+	}
+	.contact .contact-info .info .desc p {
+		font-size: 14px;
+	}
+	.blog .blog-item.two .head {
+		display: none;
+	}
+	.blog .blog-item.two h4,
+	.blog .blog-item.two ul,
+	.blog .blog-item.two .blog-btn {
+		margin: 10px 0;
+	}
+	.blog-page .blog-head h1,
+	.blog-list .blog-head h1 {
+		font-size: 35px;
+	}
+	.blog-page .blog-head .content-head,
+	.blog-list .blog-head .content-head {
+		padding: 100px 0;
+	}
+	.blog-list .blog-post .main .thumbnail ul {
+		padding: 10px;
+	}
+	.blog-list .pagination {
+		margin-bottom: 50px;
+	}
+	.blog-page .blog-head .desc {
+		display: block;
+	}
+	.blog-page .blog-head .desc span {
+		margin-bottom: 15px;
+		justify-content: center;
+	}
+	.blog-page .blog-head .desc span:after {
+		display: none;
+	}
+	.blog-page .blog-comments,
+	.blog-page .blog-comments ul li .comment-text a {
+		margin: 0;
+	}
+	.blog-page .blog-comments ul li .comment-text p {
+		font-size: 13px;
+	}
+	.blog-page .blog-comments ul li ul {
+		margin-left: 10px;
+	}
+	.blog-page .blog-content .container {
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.banner h1 {
+    	font-size: 3vh;
+	}
+	.console-container{
+			font-size: 1em;
+			width:200px;
+	}
+>>>>>>> parent of b22280f... responsive h2
 	.banner p {
     	font-size: 20px;
 	}
