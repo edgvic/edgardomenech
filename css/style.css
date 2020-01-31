@@ -1198,6 +1198,36 @@ svg g [fill] {
     z-index: 0;
 }
 
+/* Terminal Text Effect */
+body {
+  background: #111;
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+
+  font-family:Poppins;
+  font-size:3em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:bottom;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
 /* Particles */
 #particles-js {
     position: absolute;
@@ -3605,6 +3635,10 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 	.banner h1 {
     	font-size: 50px;
 	}
+	.console-container{
+			font-size: 2em;
+			width:300px;
+	}
 <<<<<<< HEAD
 =======
 	.banner p {
@@ -4139,6 +4173,10 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 	.scroll-down {
 		display: none;
 	}
+	.console-container{
+			font-size: .5em;
+			width:200px;
+	}
 	.bottom-panel {
 		max-width: 190px;
 	}
@@ -4230,34 +4268,4 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 	100% {
 		top: 110%;
 	}
-}
-
-/* Terminal Text Effect */
-body {
-  background: #111;
-}
-.hidden {
-  opacity:0;
-}
-.console-container {
-
-  font-family:Poppins;
-  font-size:3em;
-  text-align:center;
-  height:200px;
-  width:600px;
-  display:block;
-  position:bottom;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
-}
-.console-underscore {
-  display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
 }
