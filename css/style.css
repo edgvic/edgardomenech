@@ -3542,6 +3542,36 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 			transform: translate(-20px, 0px);
 }
 
+/* Terminal Text Effect */
+body {
+  background: #111;
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+
+  font-family:Poppins;
+  font-size:3em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:bottom;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}
+
 /* ---------------------------------
 		14. Responsible
 --------------------------------- */
@@ -3604,6 +3634,10 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 @media screen and (max-width: 768px) {
 	.banner h1 {
     	font-size: 50px;
+	}
+	.console-container {
+			font-size: 2em;
+			width:200px;
 	}
 	.banner p {
     	font-size: 20px;
@@ -3865,7 +3899,7 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 	.banner h1 {
     	font-size: 3vh;
 	}
-	.console-container{
+	.console-container {
 			font-size: 1em;
 			width:200px;
 	}
@@ -4227,34 +4261,4 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 	100% {
 		top: 110%;
 	}
-}
-
-/* Terminal Text Effect */
-body {
-  background: #111;
-}
-.hidden {
-  opacity:0;
-}
-.console-container {
-
-  font-family:Poppins;
-  font-size:3em;
-  text-align:center;
-  height:200px;
-  width:600px;
-  display:block;
-  position:bottom;
-  color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
-}
-.console-underscore {
-  display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
 }
