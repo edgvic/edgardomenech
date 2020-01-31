@@ -3964,3 +3964,33 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 		top: 110%;
 	}
 }
+
+/* Terminal Text Effect */
+body {
+  background: #111;
+}
+.hidden {
+  opacity:0;
+}
+.console-container {
+
+  font-family:Poppins;
+  font-size:3em;
+  text-align:center;
+  height:200px;
+  width:600px;
+  display:block;
+  position:bottom;
+  color:white;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.console-underscore {
+  display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+}

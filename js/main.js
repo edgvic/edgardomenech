@@ -18,42 +18,43 @@ Table of Content
 	06. Newsletter Open
 	07. Portfolio Tilt
 	08. Testimonial Slider
-	09. Magnific Popup 
+	09. Magnific Popup
 	10. Validate Contact Form
 	11. Cursor Effect
 	12. Magnetic Effect
 	13. Slider
 	14. Video Youtube
 	15. Google Map
+	16. Terminal Text Effect
 
 ----------------------------------- */
 
 $(window).on("load", function() {
-	
+
 	/* -----------------------------------
 			01. Music Background
 	----------------------------------- */
 	$('body').append('<audio loop autoplay volume="1" id="audio-player"><source src="music.mp3" type="audio/mpeg"></audio>');
     	var audio = document.getElementById("audio-player");
     	audio.volume = 0.2;
-	
+
 	if($(window).length) {
 		$('.music-bg').css({'visibility':'visible'});
 		$('body').addClass("audio-on");
 		if ($('body').hasClass('audio-off')) {
         	$('body').removeClass('audio-on');
-		} 
+		}
 		$(".music-bg").on('click', function() {
-			$('body').toggleClass("audio-on audio-off");         
+			$('body').toggleClass("audio-on audio-off");
 			if ($('body').hasClass('audio-off')) {
 				audio.pause();
-			} 
+			}
 			if ($('body').hasClass('audio-on')) {
 				audio.play();
 			}
 		});
 	}
-	
+
 	/* -----------------------------------
 			02. Isotope Portfolio Setup
 	----------------------------------- */
@@ -80,19 +81,19 @@ $(window).on("load", function() {
             });
         });
     }
-	
+
 	/* -----------------------------------
 			03. Blogs Masonry Setup
 	----------------------------------- */
     $('.blog-masonry').isotope({ layoutMode: 'moduloColumns' });
-	
+
 });
 
 $(function() {
     "use strict";
-	
+
 	bannerSlider();
-	
+
 	/* -----------------------------------
 			04. Preloader
 	----------------------------------- */
@@ -115,20 +116,20 @@ $(function() {
 		}
 
 	}, 9);
-	
+
 	/* -----------------------------------
 			05. Drop Menu
 	----------------------------------- */
 	$('.animation-wrap').on('mouseenter mouseleave', function () {
 		$(this).children('ul').stop(true, false, true).slideToggle(300);
 	});
-	
+
 	/* -----------------------------------
 			06. Newsletter Open
 	----------------------------------- */
 	$('.newsletter').on('click', function() {$('.newsletter-block').toggleClass('open');});
 	$('.news-close').on('click', function() {$('.newsletter-block').removeClass('open');});
-	
+
 	/* -----------------------------------
 			07. Portfolio Tilt
 	----------------------------------- */
@@ -139,7 +140,7 @@ $(function() {
 		maxGlare: .6,
         reverse: true
     });
-	
+
 	/* -----------------------------------
 			08. Testimonial Slider
 	----------------------------------- */
@@ -155,13 +156,13 @@ $(function() {
         clickable: true,
       }
     });
-	
+
 	/* -----------------------------------
-	      09. Magnific Popup 
+	      09. Magnific Popup
 	----------------------------------- */
 	$(".portfolio-items .image-link").magnificPopup({type: "image"});
 	$(".portfolio-items .video-link").magnificPopup({type: "iframe"});
-	
+
 	/* -----------------------------------
 	    10. Validate Contact Form
 	----------------------------------- */
@@ -174,7 +175,7 @@ $(function() {
                 },
 
                 email: "required",
-				
+
             },
 
             messages: {
@@ -208,7 +209,7 @@ $(function() {
 
         });
     }
-	
+
 	/* -----------------------------------
 			11. Cursor Effect
 	----------------------------------- */
@@ -348,7 +349,7 @@ $(function() {
                 self.$cursorBorder.classList.remove('zoom');
             });
         },
-		
+
 		// Cursor Sound
 		cursorSound: function () {
             var self = this;
@@ -361,7 +362,7 @@ $(function() {
 				self.$cursorBorder.classList.remove('homing');
             });
         },
-		
+
 		// Cursor Pen
 		cursorPen: function () {
             var self = this;
@@ -379,7 +380,7 @@ $(function() {
     if (!isMobile) {
         cursor.init();
     }
-	
+
 	/* -----------------------------------
 			12. Magnetic Effect
 	----------------------------------- */
@@ -421,13 +422,13 @@ $(function() {
 	function calcDistance(elem, mouseX, mouseY) {
 		return Math.floor(Math.sqrt(Math.pow(mouseX - (elem.offset().left + (elem.width() / 2)), 2) + Math.pow(mouseY - (elem.offset().top + (elem.height() / 2)), 2)));
 	}
-	
-	
+
+
 	// Setup Google Map
 	if($('#map').length) {
         initMap();
      };
-	
+
 });
 
 /* -----------------------------------
@@ -455,7 +456,7 @@ function bannerSlider() {
                 prevEl: '.slider-button-prev',
             },
         });
-		
+
         bannerSlider.on('slideChange', function() {
             var csli = bannerSlider.realIndex + 1,
                 curnum = $('#current');
@@ -532,7 +533,7 @@ function initMap() {
         cordinates = new google.maps.LatLng(latitude, longitude);
 
     var styles = [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}];
-	
+
         var mapOptions = {
         zoom: zoom,
         center: cordinates,
@@ -548,4 +549,59 @@ function initMap() {
         map: map,
         title: "We are here!"
     });
+}
+
+/* -----------------------------------
+		16. Terminal Text Effect
+----------------------------------- */
+// function([string1, string2],target id,[color1,color2])
+ consoleText(['>Web Developer', '>Web Designer', 'No weeey'], 'text',['white','white','white']);
+
+function consoleText(words, id, colors) {
+  if (colors === undefined) colors = ['#fff'];
+  var visible = true;
+  var con = document.getElementById('console');
+  var letterCount = 1;
+  var x = 1;
+  var waiting = false;
+  var target = document.getElementById(id)
+  target.setAttribute('style', 'color:' + colors[0])
+  window.setInterval(function() {
+
+    if (letterCount === 0 && waiting === false) {
+      waiting = true;
+      target.innerHTML = words[0].substring(0, letterCount)
+      window.setTimeout(function() {
+        var usedColor = colors.shift();
+        colors.push(usedColor);
+        var usedWord = words.shift();
+        words.push(usedWord);
+        x = 1;
+        target.setAttribute('style', 'color:' + colors[0])
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (letterCount === words[0].length + 1 && waiting === false) {
+      waiting = true;
+      window.setTimeout(function() {
+        x = -1;
+        letterCount += x;
+        waiting = false;
+      }, 1000)
+    } else if (waiting === false) {
+      target.innerHTML = words[0].substring(0, letterCount)
+      letterCount += x;
+    }
+  }, 120)
+  window.setInterval(function() {
+    if (visible === true) {
+      con.className = 'console-underscore hidden'
+      visible = false;
+
+    } else {
+      con.className = 'console-underscore'
+
+      visible = true;
+    }
+  }, 400)
 }
