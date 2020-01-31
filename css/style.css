@@ -4162,6 +4162,13 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 	}
 }
 
+@media screen and (max-height: 750px) {
+	.preloader p{
+		position: absolute centered;
+		top: 70vh;
+	}
+}
+
 @media screen and (max-height: 414px) {
 	.animation-wrap,
 	.slider-nav:before,
@@ -4184,7 +4191,6 @@ input:focus.subscribe-email::-webkit-input-placeholder {
 		margin: 0 15px;
 	}
 }
-
 /* ---------------------------------
 		15. Animation
 --------------------------------- */
