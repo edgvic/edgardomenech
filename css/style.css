@@ -1163,7 +1163,7 @@ svg g [fill] {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
             background-size: cover;
-    background-image: url(/img/background.jpg);
+    background-image: url(/img/bg.jpg);
 }
 
 .background:before,
