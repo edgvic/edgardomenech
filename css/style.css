@@ -165,14 +165,14 @@ blockquote span img {
 	background-color: rgba(14, 15, 16, .5);
 	border-top-left-radius: 10px;
 	-webkit-transition: all .3s ease;
-			transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .music-bg.blog-music {
 	position: absolute;
 	width: 60px;
 	right: 25px;
-    bottom: -20px;
+  bottom: -20px;
 	padding: 0;
 	visibility: hidden;
 	background-color: transparent;
