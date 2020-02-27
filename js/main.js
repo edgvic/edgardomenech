@@ -555,7 +555,7 @@ function initMap() {
 		16. Terminal Text Effect
 ----------------------------------- */
 // function([string1, string2],target id,[color1,color2])
- consoleText(['>Web Developer', '>Web Designer', 'No weeey'], 'text',['white','white','white']);
+ consoleText(['>Web Developer', '>Web Designer'], 'text',['white','white']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
