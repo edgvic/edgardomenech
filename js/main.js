@@ -2,12 +2,6 @@
 				Scripts
 --------------------------------------------------
 
-    Template Name: Kyle - Creative Portfolio Template
-    Author: Malyarchuk
-    Copyright: 2019
-
---------------------------------------------------
-
 Table of Content
 
 	01. Music Background
@@ -547,7 +541,7 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: cordinates,
         map: map,
-        title: "We are here!"
+        title: "Ubicación"
     });
 }
 
